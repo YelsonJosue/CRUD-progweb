@@ -1,0 +1,45 @@
+<form action="/api/product/{{products._id}}?_method=PUT" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+
+    <h1>
+        <center>¡Bienvenidos!</center>
+    </h1>
+
+    <div class="form-outline mb-4">
+        <label for="_id">ID</label>
+        <input type="text" class="form-control" disable value="{{products._id}}" name="_Id">
+    </div>
+
+    <div class="form-outline mb-4">
+        <label for="Nombre">Nombre</label>
+        <input type="text" class="form-control" value="{{products.name}}" name="name">
+    </div>
+    <div class="form-outline mb-4">
+        <label for="Price">Precio</label>
+        <input type="number" class="form-control" value="{{products.price}}" name="price">
+    </div>
+    <div class="form-outline mb-4">
+        <label for="category">Categoria</label>
+        <select class="form-control" id="category" name="category">
+
+            <option selected>{{products.category}}</option>
+            <option>Computers</option>
+            <option>Phones</option>
+            <option>Accesories</option>
+        </select>
+    </div>
+    <div class="form-outline mb-4">
+        <label for="description">Descripción</label>
+        <input type="text" class="form-control" value="{{products.description}}" name="description">
+    </div>
+    <div class="form-outline mb-4">
+        <label for="picture">Imagen</label>
+        <input type="text" class="form-control" value="{{products.picture}}" name="picture">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block">Modificar</button>
+    <button type="submit" formaction="/api/product/{{products._id}}?_method=delete" method="POST"
+        class="btn btn-primary btn-block">Eliminar</button>
+        <a href="/api/product" class="btn btn-info" role="button">Cancelar</a>
+
+</form>

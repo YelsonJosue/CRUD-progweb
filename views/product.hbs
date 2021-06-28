@@ -1,0 +1,44 @@
+<form action="/api/product" method="POST">
+    <h1><center>¡Bienvenidos!</center></h1>
+  <div class="form-outline mb-4">
+        <label for="Nombre">Nombre</label>
+        <input type="text" class="form-control" value="" name="name" placeholder="Nombre">
+    </div>
+  <div class="form-outline mb-4">
+        <label for="Price">Precio</label>
+        <input type="number" class="form-control" value="" placeholder="Introduce precio" name="price">
+    </div>
+  <div class="form-outline mb-4">
+        <label for="category">Categoria</label>
+        <select class="form-control" id="category" name="category">
+            
+            <option>Computers</option>
+            <option>Phones</option>
+            <option>Accesories</option>
+        </select>
+    </div>
+  <div class="form-outline mb-4">
+        <label for="description">Descripción</label>
+        <input type="text" class="form-control" value="" placeholder="Escribe una descripción" name="description">
+    </div>
+  <div class="form-outline mb-4">
+        <label for="picture">Imagen</label>
+        <input type="text" class="form-control" value="" placeholder="URL de tu avatar" name="picture">
+    </div>
+<div class="row mb-4">
+    <div class="col d-flex justify-content-center">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="form1Example3"
+          checked
+        />
+        <label class="form-check-label" for="form1Example3"> Recordar </label>
+      </div>
+    </div>
+
+
+     <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+</form
